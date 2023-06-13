@@ -1,1 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+        background-color: #666;
+      }
+      h1{
+        color: crimson;
+      }
+      h2{
+        color: crimson;
+      }
+      h3{
+        color: crimson;
+      }
+      h6{
+        color: white;
+      }
+      h1:hover{
+        color: blue;
+      }
+      p{
+        color: white;
+      }
+      .prof{
+        width: 200px;
+        border-radius: 50%;
+      }
+      .box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;      }
+    </style>
 
+    <style type="text/css">
+      body{margin-top:20px;}
+      .timeline-steps {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap
+      }
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+    </style>
+    <style type="text/css">
+      :root {
+  --success: #00b894;
+    --mid: orange;
+  --progress: #e17055;
+}
+
+.progressbar-wrapper {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.progressbar {
+  background-color: var(--progress);
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.progressbar[title="downloading"] {
+   background-color: var(--progress);
+}
+
+.progressbar[title="mid"] {
+   background-color: var(--mid);
+}
+
+
+.progressbar[title="downloaded"] {
+   background-color: var(--success);
+}
+  
+.mp4 {
+  width: 100%;
+}
+
+.mp3 {
+  width: 60%;
+}
+.mp4a {
+  width: 90%;
+}
+
+.mp3a {
+  width: 15%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Hello, world!</h1>
+    <img src="https://i1.sndcdn.com/artworks-000147302274-8cn24e-t500x500.jpg" class="prof">
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id commodo sapien. Ut vitae elit egestas, vehicula mi pulvinar, posuere sem. Quisque venenatis porta orci, eu aliquam sem lobortis vitae. Pellentesque bibendum, diam et sollicitudin vehicula, nibh erat vestibulum nulla, in dapibus elit sem sed leo. Aenean dapibus sollicitudin sem in condimentum. Curabitur condimentum mollis mauris nec condimentum. Donec porta leo vitae maximus rutrum.</p>
+<p>
+Mauris sed leo sagittis, ultrices nisi non, fringilla ex. Aenean tempus eget odio eu aliquet. Nullam eget ipsum orci. Etiam viverra, odio ac dictum viverra, ligula ipsum sodales lacus, nec interdum turpis erat vel quam. Praesent venenatis dignissim mattis. Sed odio nunc, sollicitudin sed luctus nec, ullamcorper vitae ante. Aliquam sit amet facilisis leo, id varius leo. Pellentesque molestie quis leo sit amet porta.
+</p><p>
+Phasellus pretium, elit id fermentum sagittis, est erat volutpat sem, dignissim auctor urna lorem id nibh. Nunc lectus felis, volutpat a porttitor ut, auctor nec ante. Sed tempus dictum augue, a aliquam nunc vulputate nec. Nunc vel risus ex. Aliquam non est auctor, iaculis ex sit amet, malesuada leo. Nunc in nisl et justo laoreet tristique nec ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut nisi risus, efficitur ac nisi non, interdum laoreet ipsum. Pellentesque rhoncus turpis vel neque maximus, vel placerat augue rutrum.
+</p><p>
+Nulla bibendum magna nec nisi eleifend viverra. Aliquam lacinia aliquam lacus, sit amet aliquam diam vulputate sit amet. Cras eget nulla diam. Nullam vel justo dictum, scelerisque ipsum sed, faucibus mauris. In hac habitasse platea dictumst. Sed hendrerit ultrices massa, ac aliquet risus viverra in. Nunc aliquet odio eu ante vestibulum commodo. Donec egestas ex in dui ornare aliquet et at libero.
+</p><p>
+Sed non lectus sit amet magna feugiat tristique. Maecenas sed nisl sit amet risus imperdiet hendrerit ut rutrum dolor. Sed tincidunt erat odio, a vulputate orci sagittis placerat. Curabitur hendrerit dui vel elit posuere, non tincidunt purus fermentum. Nam neque sem, congue vel tempor id, vehicula volutpat dolor. Aenean ac faucibus sem, sed euismod mauris. Phasellus porta enim vulputate ante pharetra vestibulum. Cras et lacus ligula. Donec feugiat purus ut sodales viverra. Nunc quam nulla, sagittis eu porttitor eget, iaculis eu velit. Morbi rhoncus neque in pellentesque congue. Vivamus nisi lectus, venenatis ac varius in, finibus quis turpis. Nulla vitae ipsum vel turpis vestibulum pulvinar.</p>
+</div>
+
+<div class="container">                      
+    <div class="row text-center justify-content-center mb-5">
+        <div class="col-xl-6 col-lg-8">
+            <h2 class="font-weight-bold">A Company Evolution</h2>
+            <p>We’re very proud of the path we’ve taken. Explore the history that made us the company we are today.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                        <div class="inner-circle"></div>
+                        <p class="mt-3 mb-1"><b>2003</b></p>
+                        <p class="mb-0 mb-lg-0">Favland Founded</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                        <div class="inner-circle"></div>
+                        <p class="mt-3 mb-1"><b>2004</b></p>
+                        <p class="mb-0 mb-lg-0">Launched Trello</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                        <div class="inner-circle"></div>
+                        <p class="mt-3 mb-1"><b>2005</b></p>
+                        <p class="mb-0 mb-lg-0">Launched Messanger</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                        <div class="inner-circle"></div>
+                        <p class="mt-3 mb-1"><b>2010</b></p>
+                        <p class="mb-0 mb-lg-0">Open New Branch</p>
+                    </div>
+                </div>
+                <div class="timeline-step mb-0">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                        <div class="inner-circle"></div>
+                        <p class="mt-3 mb-1"><b>2020</b></p>
+                        <p class="mb-0 mb-lg-0">In Fortune 500</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <h2>projets</h2>
+  <div class="box">
+ <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div>
+ <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div>
+  <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div> <div> <img src="https://cdn-icons-png.flaticon.com/512/3349/3349398.png" width="200px"><h3>test</h3></div>
+</div>
+</div>
+
+<h2 class="text-center">Compétences</h2>
+ <div class="container">
+     <p>HTML</p>
+     <div class="progressbar-wrapper">
+      <div title="downloaded" class="progressbar mp4">100%</div>
+     </div>
+
+    
+
+     <p>PHP</p>
+     <div class="progressbar-wrapper">
+      <div title="downloaded" class="progressbar mp4a">90%</div>
+     </div>
+ <p>CSS</p>
+     <div class="progressbar-wrapper">
+      <div title="mid" class="progressbar mp3">60%</div>
+     </div>
+     <p>JS</p>
+     <div class="progressbar-wrapper">
+      <div title="downloading" class="progressbar mp3a">15%</div>
+     </div>
+</div>
+
+<div class="container">
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id commodo sapien. Ut vitae elit egestas, vehicula mi pulvinar, posuere sem. Quisque venenatis porta orci, eu aliquam sem lobortis vitae. Pellentesque bibendum, diam et sollicitudin vehicula, nibh erat vestibulum nulla, in dapibus elit sem sed leo. Aenean dapibus sollicitudin sem in condimentum. Curabitur condimentum mollis mauris nec condimentum. Donec porta leo vitae maximus rutrum.</p>
+</div>
+
+<div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
